@@ -14,15 +14,7 @@ module.exports = {
     'serialtiles': path.join(__dirname, 'valid.serialtiles.gz'),
     'serialtiles_pbf': path.join(__dirname, 'valid.serialtiles.pbf.gz'),
     'serialtiles_png': path.join(__dirname, 'valid.serialtiles.png.gz'),
-    'mbtiles-carmen2': path.join(__dirname, 'valid-carmen2.mbtiles'),
-    'mbtiles-onlygrids': path.join(__dirname, 'valid-onlygrids.mbtiles'),
-    'mbtiles-onlytiles': path.join(__dirname, 'valid-onlytiles.mbtiles'),
-    'mbtiles-tilesgrids': path.join(__dirname, 'valid-tilesgrid.mbtiles'),
-    'mbtiles-update1': path.join(__dirname, 'valid-update1.mbtiles'),
-    'mbtiles-update2': path.join(__dirname, 'valid-update2.mbtiles'),
-    'mbtiles-vector': path.join(__dirname, 'valid-vector.mbtiles'),
-    'mbtiles-vectorgzip': path.join(__dirname, 'valid-vectorgzip.mbtiles'),
-    'mbtiles-webp': path.join(__dirname, 'valid-webp.mbtiles')
+    'mbtiles-vector-version2': path.join(__dirname, 'valid-vector-version2.mbtiles')
   },
   invalid: {
     'unsupported': path.join(__dirname, 'invalid.unsupported.txt'),
@@ -62,7 +54,16 @@ module.exports = {
       'empty': path.join(__dirname, 'invalid.mbtiles-empty.mbtiles'),
       'limits': path.join(__dirname, 'invalid.mbtiles-limits.mbtiles'),
       'nulltile': path.join(__dirname, 'invalid.mbtiles-null-tile.mbtiles'),
-      'prepare': path.join(__dirname, 'invalid.mbtiles-prepare.mbtiles')
+      'prepare': path.join(__dirname, 'invalid.mbtiles-prepare.mbtiles'),
+      // 'carmen2-v1': path.join(__dirname, 'valid-carmen2-v1.mbtiles'),
+      // 'onlygrids-v1': path.join(__dirname, 'valid-onlygrids-v1.mbtiles'),
+      // 'onlytiles-v1': path.join(__dirname, 'valid-onlytiles-v1.mbtiles'),
+      // 'tilesgrids-v1': path.join(__dirname, 'valid-tilesgrid-v1.mbtiles'),
+      // 'update1-v1': path.join(__dirname, 'valid-update1-v1.mbtiles'),
+      // 'update2-v1': path.join(__dirname, 'valid-update2-v1.mbtiles'),
+      'vector-v1': path.join(__dirname, 'invalid.mbtiles-vector-v1.mbtiles')
+      // 'vectorgzip-v1': path.join(__dirname, 'valid-vectorgzip-v1.mbtiles'),
+      // 'webp-v1': path.join(__dirname, 'valid-webp-v1.mbtiles')
     }
   }
 };

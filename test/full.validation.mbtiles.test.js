@@ -6,11 +6,12 @@ var queue = require('queue-async');
 
 process.env.MapboxAPIMaps = 'https://api.tiles.mapbox.com';
 
-test('full mbtiles validation: invalid', function(t) {
+test.only('full mbtiles validation: invalid', function(t) {
   var q = queue();
   Object.keys(fixtures.invalid.mbtiles).forEach(function(k) {
     q.defer(function(callback) {
       validate(fixtures.invalid.mbtiles[k], function(err, valid, message) {
+        console.log('FIXTURE: ' + fixtures.invalid.mbtiles[k]);
         t.ifError(err, 'no error: ' + k);
         t.notOk(valid, 'is not valid: ' + k);
         t.equal(message, expected.mbtilesErrors[k], 'expected message');
